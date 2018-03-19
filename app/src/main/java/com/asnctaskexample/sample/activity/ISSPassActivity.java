@@ -80,7 +80,7 @@ public class ISSPassActivity extends AppCompatActivity  implements LocationListe
             Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 
             latitude = location.getLatitude();
-            longitude = location.getLatitude();
+            longitude = location.getLongitude();
         }
         catch(SecurityException e) {
             e.printStackTrace();
